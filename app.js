@@ -113,6 +113,6 @@ app.use((err,req,res,next)=>{
     res.status(statusCode).render('campgrounds/error',{err});
 })
 
-app.listen(3000,()=>{
-    console.log('listening at port 3000');
+app.listen(80,()=>{
+    console.log('listening at port 80');
 })
