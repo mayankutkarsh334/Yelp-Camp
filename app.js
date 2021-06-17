@@ -113,6 +113,8 @@ app.use((err,req,res,next)=>{
     res.status(statusCode).render('campgrounds/error',{err});
 })
 
-app.listen(8443,()=>{
-    console.log('listening at port 8443');
+const port=process.env.PORT || 3000;
+
+app.listen(port,()=>{
+    console.log(`listening at port ${port}`);
 })
